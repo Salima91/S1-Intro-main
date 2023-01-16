@@ -6,6 +6,7 @@
     <meta name="description" content="Créer votre liste de cadeaux et envoyez-là à vos ami.e.s">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <a class="navbar-brand" href="#">L'Atelier du bonheur Mercantile</a>
@@ -23,24 +24,29 @@
     <h4 class="mb-3">Ajouter un item à la liste</h4>
     <div class="mb-3">
       <p>Description :</p>
-      <input type="text" id="desc" name="essai" required></input>
+      <input type="text" id="desc" name="essai" required>
     </div>
     <div class="mb-4">
       <span>Valeur estimée ($) :</span><br>
       <input type="number" id="valeur">
     </div>
     <div class="d-grid gap-2">
-      <button>Ajouter</button>
+      <button onclick="ajouter()">Ajouter</button>
       <br>
       <button>Annuler</button>
     </div>
+
+<!--     ajouter des items al la fin de la liste et concatener avec les prix-->
+
     <h3>Ma liste</h3>
-    <p class="list">
+    <div class="list" id="maliste">
       <p>Crocs des fêtes : <span>14$</span></p>
       <p>Une tuque des fêtes :<span>42$</span></p>
       <p>Un chandail laid des fêtes :<span>25$</span></p>
-      <p>Total: 81$</p>
-    </p>
+    </div>
+    <div >
+      <p>Total:<span id="total">81</span>$</p>
+    </div>
     <p class="col-form-label h3">Destinataire:</p>
     <input id="email" type="text">
     <div>

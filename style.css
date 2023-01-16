@@ -1,0 +1,53 @@
+/*main{*/
+/*    margin: 30px;*/
+/*}*/
+/*.enteteMenu {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    max-width: 30rem;*/
+/*}*/
+
+/*ul{*/
+/*    list-style-type: none;*/
+/*}*/
+/*ul li a{*/
+/*    text-decoration: none;*/
+/*    color:black;*/
+/*}*/
+
+/*#allForm{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    max-width: 70rem;*/
+/*}*/
+/*#butonAjou button,input{*/
+/*    width: 400px;*/
+/*}*/
+
+/*#listeItems li{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    border: gray solid 1px;*/
+/*    padding: 10px;*/
+
+/*}*/
+/*#formdestin{*/
+/*    text-align: center;*/
+/*}*/
+
+/*input, button{*/
+/*    margin: 3px;*/
+/*}*/
+
+
+/*span{*/
+/*    width: 35px;*/
+/*    background: green;*/
+/*    border-radius: 5px;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*}*/
+/*#listeItems #total{*/
+/*    justify-content: right;*/
+/*    border: none;*/
+/*}*/
