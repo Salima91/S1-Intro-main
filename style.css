@@ -1,11 +1,10 @@
-/*main{*/
-/*    margin: 30px;*/
-/*}*/
-/*.enteteMenu {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    max-width: 30rem;*/
-/*}*/
+main{
+    margin: 30px;
+}
+.link {
+    display: flex;
+    justify-content: space-around;
+}
 
 /*ul{*/
 /*    list-style-type: none;*/
@@ -35,19 +34,25 @@
 /*    text-align: center;*/
 /*}*/
 
-/*input, button{*/
-/*    margin: 3px;*/
-/*}*/
+input, button{
+    margin: 8px;
+}
 
 
-/*span{*/
-/*    width: 35px;*/
-/*    background: green;*/
-/*    border-radius: 5px;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*}*/
-/*#listeItems #total{*/
-/*    justify-content: right;*/
-/*    border: none;*/
-/*}*/
+span{
+    background: green;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+#listeItems #total{
+    justify-content: right;
+    border: none;
+}
+/*selecteur descendant*/
+#maliste p{
+    display: flex;
+        justify-content: space-between;
+        border: gray solid 1px;
+        padding: 10px;
+}

@@ -24,3 +24,5 @@ function annuler() {
 
 
 }
+document.querySelector()
+document.getElementsByClassName()
