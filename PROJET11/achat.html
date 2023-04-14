@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous" defer></script>
+  <script src="achat.js" defer></script>
+</head>
+<body>
+<!--/formulaire pour permettre un utilisateur d'acheter des produits, les labels et les input class="mx-3" s sur la meme ligne
+/-->
+<form action="facture.html" method="post" onsubmit=" return Achat()">
+    <h2 class="text-center">Formulaire d'achat</h2>
+    <section class="container-fluid text-center">
+    <label class="row px-3 py-2 text-primary ">Nom
+    <input class="mx-3" type="text" name="nom" id="nom"/>
+    </label>
+    <label class="row px-3 py-2 text-primary">Email
+    <input class="mx-3" type="email" name="email" id="email">
+    </label>
+    <label class="row px-3 py-2 text-primary">Password
+    <input class="mx-3" type="password" name="password" id="password">
+    </label>
+    <label class="row px-3 py-2 text-primary">Produit1
+    <select class="mx-3 px-3" id="produit" >
+        <option value="choe">produit1</option>
+        <option value="choe">produit2</option>
+        <option value="choe">produit3</option>
+        <option value="choe">produit4</option>
+    </select>
+        <label class=" px-3 py-2 text-primary">Quantité
+        <input type="number" id="quantite">
+        </label>
+        <p class="border bg-warning text-danger" id="prix"> prix par unité 85$</p>
+    </label>
+        <input type="submit" value="VALIDER" class=" alert-primary">
+    </section>
+</form>
+</body>
+</html>
