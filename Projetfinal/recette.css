@@ -1,0 +1,19 @@
+body{
+    /*background-image: url("foodiesfeed.com_yellow-dolphin.jpg");*/
+    background-size: cover;
+    background-color: #f7f4f0;
+    background-repeat: no-repeat;
+}
+#formulaire1{
+    display: none;
+}
+#formulaire2{
+    display: none;
+}
+/*silvie.leclerc@services.gouv.qc.ca*/
+
+/*.container-fluid*/
+/*{*/
+/*    background-image: url("imagepage1-02.jpg");*/
+/*    width: 3000px;*/
+/*}*/

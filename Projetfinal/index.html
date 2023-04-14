@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+     <meta name="description" content="MealMate">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="recette.css">
+  <script src="recette.js" defer></script>
+
+</head>
+<body>
+<header class="container-fluid  mb-3 bg-light" >
+  <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2 mx-3 ">
+              <img src="image_123986672.JPG"
+                   alt="logo" width="100" height="100">
+            </div>
+            <div class="col-10">
+              <h1 class="">Planificateur de repas</h1>
+            </div>
+          </div>
+        </div>
+   <div class="container-fluid">
+
+     <form class="d-flex" role="search">
+       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success" type="submit">Search</button>
+     </form>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mx-3 ">
+          <a class="nav-link active" href="#" aria-current="page">Accueil</a>
+        </li>
+        <li class="nav-item mx-3 ">
+<!--          <a class="nav-link active" href="">Inscription</a>-->
+          <input type="submit" class="btn btn-primary " id="connexion" value="Connexion">
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="row my-5">
+  <section class="col mx-3">
+    <h2 class="h3 mb-b text-bold">Remarque*</h2>
+    <ul class="row">
+<!--      <li class="card  me-2">-->
+<!--        <div class="card-body">-->
+          <p class="card-text"><h4>Bonjour et bienvenue</h4>, sur notre application de recettes ! Pour profiter pleinement
+            de toutes les fonctionnalités de l'application, nous vous recommandons de créer un compte.
+            Cela vous permettra de sauvegarder vos recettes préférées, de suivre votre historique de recherche
+            et d'ajouter vos propres recettes. De plus, en créant un compte, vous serez informé(e) des dernières
+            mises à jour et des nouvelles recettes disponibles. Nous espérons que vous apprécierez votre expérience
+            sur notre application et n'hésitez pas à nous contacter si vous avez des questions ou des commentaires.</p>
+          <label class="form-label text-danger">Si vous n'avez pas de compte clique ici pour vous inscrire</label>
+          <button type="reset" class="btn text-info btn-secondary h3" id="inscription" >S'inscrire</button>
+<!--        </div>-->
+<!--      </li>-->
+    </ul>
+  </section>
+
+    <section class="col mx-3 ">
+      <img src="imagepage1.jpg" width="800" height="500" id="image">
+<!--formulaire de connexion-->
+    <div class="card text-center mb-3" style="width: 18rem;" id="formulaire1">
+      <div class="card-body">
+        <form method="post">
+          <div class="mb-3">
+            <label for="email1" class="form-label h6">Email</label>
+            <input type="email" class="form-control" name="email" id="email1" required>
+          </div>
+            <div class="mb-3">
+                <label for="password" class="form-label h6">Mot de passe</label>
+                <input type="password" class="form-control" name="password" id="password" required>
+            </div>
+          <div class="mb-3">
+            <input type="submit" class="btn btn-primary" value="Connexion">
+          </div>
+        </form>
+
+        <p>clique ici si vous avez oublié votre mot de passe    <a href="#" class="btn btn-primary">Reunisialise</a></p>
+      </div>
+    </div>
+<!--formulaire d'inscrption-->
+      <div class="card text-center mb-3" style="width: 18rem;" id="formulaire2">
+        <div class="card-body">
+          <form method="post" action="compteUtilisateur.html">
+            <div class="mb-3">
+              <label for="nom" class="form-label h6">Nom</label>
+              <input type="text" class="form-control" name="nom" id="nom" required>
+              <p id="nomErreur"></p>
+            </div>
+            <div class="mb-3">
+              <label for="prenom" class="form-label h6">Prenom</label>
+              <input type="text" class="form-control" name="prenom" id="prenom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label h6">Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label h6">Mot de passe</label>
+              <input type="password" class="form-control" name="password" id="password2" required>
+            </div>
+            <div class="mb-3">
+              <label for="profilphoto" class="form-label h6">Mot de passe</label>
+              <input type="url" class="form-control" name="profilphoto" id="profilphoto" placeholder="Chargez url de ta photo de profil">
+            </div>
+            <div class="mb-3">
+              <input type="submit" class="btn btn-primary" value="Inscrire" >
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</main>
+</body>
+</html>

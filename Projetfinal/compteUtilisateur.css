@@ -1,0 +1,25 @@
+body{
+    background-color:#f7f4f0
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card-img-top {
+    border-radius: 50%;
+    width: 200px;
+}
+.text-bold
+{
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    font-size: 1.6em;
+}
+#cardProfil
+{
+    background-color: #f7f4f0;
+}
+#ajouterPlat{
+    display: none;
+}
